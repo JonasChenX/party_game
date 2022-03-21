@@ -1,12 +1,24 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <Header/>
   <router-view/>
+  <Footer />
 </template>
 
+<script>
+import '@/assets/tailwind.css'
+import Header from '@/components/global/Header.vue'
+import Footer from '@/components/global/Footer.vue'
+export default {
+  components:{
+    Header,
+    Footer
+  }
+}
+</script>
+
+
 <style lang="scss">
+@import '@/style/components.css';
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

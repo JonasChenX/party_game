@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .g-flex-r{
+        @apply flex justify-end;
+    }
+    .g-flex-center{
+        @apply flex items-center justify-center
+    }
+}
