@@ -22,7 +22,7 @@ export default {
                     type:'聚會',
                     title:'比大小',
                     content:'選擇大or小，在短短的幾秒鐘一決勝負，提醒若搭配飲酒比輸贏，請再三考慮，會很可怕',
-                    path:'/',
+                    path:'/Game/HigherNumber',
                 },
                 {
                     type:'聚會',

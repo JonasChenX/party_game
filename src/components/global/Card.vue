@@ -6,11 +6,11 @@
             <h2 class="text-lg text-gray-900 font-medium title-font mb-4">{{$props.data.title}}</h2>
             <p class="leading-relaxed text-base">{{$props.data.content}}</p>
             <div class="g-flex-r mt-5">
-                <div class="mr-2 btn-sky">開始遊戲
-                    <router-link :to="$props.data.path">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </router-link>
-                </div>
+                <router-link :to="$props.data.path">
+                    <div class="mr-2 btn-sky">開始遊戲
+                            <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </router-link>
             </div>
         </div>
     </div>
