@@ -2,6 +2,9 @@
     <div class="text-gray-600 border-y-2 border-slate-300 p-3">
         <div class="container mx-auto flex items-center sm:flex-row flex-col">
             <span class="text-sm text-gray-900 sm:border-l-2 sm:px-1 sm:border-gray-700">遊戲人數: {{this.$store.getters.getPlayerNum}}</span>
+            <template v-if="this.$store.getters.getIsPlaying">
+                <span class="text-sm inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start btn-reset" @click="reset()">重新開始</span>
+            </template>
             <span class="text-sm text-gray-900 inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">現在時間 {{this.nowTime}}</span>
         </div>
     </div>
@@ -37,6 +40,9 @@ export default {
           self.timeFormate(new Date());
         }, 1000);
       },
+      reset(){
+        this.$store.commit('higherNumber/RESET_HIGHERNUMBER')
+      }
     },
     mounted(){
         this.nowTimes();

@@ -12,6 +12,7 @@
     .btn-sky:focus {
         @apply outline-none ring-2 ring-sky-400 ring-opacity-75;
     }
+
     .btn-circle-black {
         @apply flex items-center justify-center rounded-full border-2 w-24 h-24 text-white bg-gray-800 cursor-pointer font-sans font-semibold;
     }
@@ -19,6 +20,16 @@
         @apply scale-95;
     }
     .btn-circle-black:hover{
+        @apply bg-gray-900;
+    }
+
+    .btn-reset {
+        @apply py-2 px-4 bg-gray-800 text-white font-semibold rounded-lg shadow-md cursor-pointer;
+    }
+    .btn-reset:active{
+        @apply scale-95;
+    }
+    .btn-reset:hover{
         @apply bg-gray-900;
     }
 
