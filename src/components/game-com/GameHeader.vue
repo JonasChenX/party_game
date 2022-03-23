@@ -41,7 +41,17 @@ export default {
         }, 1000);
       },
       reset(){
-        this.$store.commit('higherNumber/RESET_HIGHERNUMBER')
+        switch(this.$route.name){
+            case 'HigherNumber':
+                this.$store.commit('gameBasic/UPDATE_RESETCOUNT')
+                this.$store.commit('higherNumber/RESET_HIGHERNUMBER')
+                break
+            case 'GuessingNumber':
+                this.$store.commit('gameBasic/UPDATE_RESETCOUNT')
+                this.$store.commit('guessingNumber/RESET_ISBINGO')
+                this.$store.commit('guessingNumber/CREATE_BINGONUM')
+                break
+        }
       }
     },
     mounted(){

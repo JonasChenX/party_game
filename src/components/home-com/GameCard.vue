@@ -46,7 +46,7 @@ export default {
                     type:'聚會',
                     title:'隨機終極密碼',
                     content:'每個數字代表著一個炸彈的線路，關係到存活的可能，請謹慎思考選擇的號碼',
-                    path:'/',
+                    path:'/Game/GuessingNumber',
                 },
                 {
                     type:'聚會',

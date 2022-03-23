@@ -1,6 +1,7 @@
 import { createStore } from 'vuex'
 import gameBasic from '@/store/modules/gameBasic.js'
 import higherNumber from '@/store/modules/higherNumber.js'
+import guessingNumber from '@/store/modules/guessingNumber.js'
 
 export default createStore({
   state: {
@@ -11,7 +12,8 @@ export default createStore({
   },
   modules: {
     gameBasic,
-    higherNumber
+    higherNumber,
+    guessingNumber
   },
   strict:true
 })

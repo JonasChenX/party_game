@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import GameView from '@/views/GameView.vue'
 
-import PalyerNum from '@/components/game-com/PalyerNum.vue'
 import HigherNumber from '@/components/game-com/HigherNumber.vue'
+import GuessingNumber from '@/components/game-com/GuessingNumber.vue'
 
 const routes = [
   {
@@ -14,18 +14,18 @@ const routes = [
   {
     path: '/Game',
     name: 'game',
-    redirect: '/Game/PlayerNum',
+    redirect: '/',
     component: GameView,
     children: [
-      {
-        path: '/Game/PlayerNum',
-        name: 'PlayerNum',
-        component: PalyerNum
-      },
       {
         path: '/Game/HigherNumber',
         name: 'HigherNumber',
         component: HigherNumber
+      },
+      {
+        path: '/Game/GuessingNumber',
+        name: 'GuessingNumber',
+        component: GuessingNumber
       },
     ]
   },
