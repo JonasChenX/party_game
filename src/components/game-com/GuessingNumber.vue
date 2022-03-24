@@ -78,5 +78,10 @@ export default {
             }
         })
     },
+    beforeUnmount(){
+        this.$store.commit('guessingNumber/RESET_ISBINGO')
+        this.$store.commit('guessingNumber/RESET_ISBINGO')
+        this.$store.commit('gameBasic/CREATE_CURRENTPLAYER',0)
+    }
 }
 </script>

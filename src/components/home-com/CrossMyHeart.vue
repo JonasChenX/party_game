@@ -10,11 +10,11 @@
                             <div class="w-auto h-1 bg-indigo-100/50 rounded mt-2 mb-4"></div>
                             <p class="leading-relaxed text-black">裡面有各種種類的問題題庫，若有太多問題想要問，但又不知道要先問哪一個，我們就會隨機幫你選擇，若題庫沒有你想問的答案，也可以自行增加</p>
                             <div class="g-flex-r mt-5">
-                                <div class="mr-2 btn-sky">開始遊戲
-                                    <router-link to="/">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </router-link>
-                                </div>
+                                <router-link to="/CrossMyHeart">
+                                    <div class="mr-2 btn-sky">開始遊戲
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </router-link>
                             </div>
                         </div>
                     </div>

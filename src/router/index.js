@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import GameView from '@/views/GameView.vue'
+import CrossMyHeartView from '@/views/CrossMyHeartView.vue'
 
 import HigherNumber from '@/components/game-com/HigherNumber.vue'
 import GuessingNumber from '@/components/game-com/GuessingNumber.vue'
@@ -28,7 +29,11 @@ const routes = [
         component: GuessingNumber
       },
     ]
-  },
+  },{
+    path:'/CrossMyHeart',
+    name:'CrossMyHeart',
+    component: CrossMyHeartView
+  }
 ]
 
 const router = createRouter({
