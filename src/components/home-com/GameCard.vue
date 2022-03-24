@@ -23,7 +23,7 @@ export default {
                     title:'比大小',
                     content:'選擇大or小，在短短的幾秒鐘一決勝負，提醒若搭配飲酒比輸贏，請再三考慮，會很可怕',
                     path:'/Game/HigherNumber',
-                    image:'/img/grass-7010267_1280.095ea2f6.webp'
+                    image:'https://cdn.pixabay.com/photo/2022/03/06/05/30/clouds-7050884_1280.jpg'
                 },
                 // {
                 //     type:'聚會',
@@ -48,7 +48,7 @@ export default {
                     title:'隨機終極密碼',
                     content:'每個數字代表著一個炸彈的線路，關係到存活的可能，請謹慎思考選擇的號碼',
                     path:'/Game/GuessingNumber',
-                    image:'/img/nature-7045125_1280.ecdf6840.webp'
+                    image:'https://cdn.pixabay.com/photo/2022/02/28/04/50/nature-7038455_1280.jpg'
                 },
                 // {
                 //     type:'聚會',
