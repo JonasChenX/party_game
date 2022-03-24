@@ -82,6 +82,7 @@
     </template>
 </template>
 <script>
+import{questionData} from '@/data/questionDB.js'
 export default {
     name:'AddQuestion',
     computed:{
@@ -101,52 +102,7 @@ export default {
 
             isPalying:true,
             animate:false,
-            time:null,
-
-            questionDB:{
-                love:[
-                    {
-                        type:'',
-                        content:'妳好'
-                    },
-                    {
-                        type:'',
-                        content:'不錯'
-                    },
-                    {
-                        type:'',
-                        content:'可以'
-                    },
-                    {
-                        type:'',
-                        content:'很好'
-                    },
-                    {
-                        type:'',
-                        content:'謝謝'
-                    },
-                ],
-                friends:[
-                    {
-                        type:'',
-                        content:'aaa'
-                    },
-                    {
-                        type:'',
-                        content:'bbbb'
-                    },
-                ],
-                family:[
-                    {
-                        type:'',
-                        content:'a1'
-                    },
-                    {
-                        type:'',
-                        content:'a2'
-                    },
-                ],
-            }
+            intervalTime:null,
         }
     },
     methods:{
@@ -181,7 +137,7 @@ export default {
         },
         stop(){
             if(!this.isPalying) return
-            window.clearInterval(this.time)
+            window.clearInterval(this.intervalTime)
             this.isPalying = false
         },
         start(){
@@ -190,7 +146,7 @@ export default {
             this.animateInterval()
         },
         animateInterval(){
-            this.time = setInterval(() => { //動畫時間設定
+            this.intervalTime = setInterval(() => { //動畫時間設定
                 this.animate = true;
                 setTimeout(()=>{
                     this.playQuestionDB.push(this.playQuestionDB[0]);
@@ -204,6 +160,15 @@ export default {
         this.checked = this.useDBTitle[this.useDBTitle.length-1]
         this.animateInterval()
     },
+    setup(){
+        const {
+            questionDB
+        } = questionData()
+
+        return{
+            questionDB
+        }
+    }
 }
 </script>
 
