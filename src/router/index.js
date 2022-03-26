@@ -5,6 +5,7 @@ import CrossMyHeartView from '@/views/CrossMyHeartView.vue'
 
 import HigherNumber from '@/components/game-com/HigherNumber.vue'
 import GuessingNumber from '@/components/game-com/GuessingNumber.vue'
+import HumanRoulette from '@/components/game-com/HumanRoulette.vue'
 
 const routes = [
   {
@@ -27,6 +28,11 @@ const routes = [
         path: '/Game/GuessingNumber',
         name: 'GuessingNumber',
         component: GuessingNumber
+      },
+      {
+        path: '/Game/HumanRoulette',
+        name: 'HumanRoulette',
+        component: HumanRoulette
       },
     ]
   },{
