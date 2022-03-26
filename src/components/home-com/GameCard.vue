@@ -25,18 +25,13 @@ export default {
                     path:'/Game/HigherNumber',
                     image:'https://cdn.pixabay.com/photo/2022/03/06/05/30/clouds-7050884_1280.jpg'
                 },
-                // {
-                //     type:'聚會',
-                //     title:'人間輪盤',
-                //     content:'每個人代表著一個代號，若指到那個代號，那恭喜成為那位最有狗屎運的人',
-                //     path:'/',
-                // },
-                // {
-                //     type:'聚會',
-                //     title:'抽鬼牌',
-                //     content:'每個人選擇一個未知的道路，通往那條稱為鬼的道路，請多吸一下隔壁玩家的好運',
-                //     path:'/',
-                // },
+                {
+                    type:'聚會',
+                    title:'人間輪盤',
+                    content:'每個人代表著一個代號，若指到那個代號，那恭喜成為那位最有狗屎運的人',
+                    path:'/Game/HumanRoulette',
+                    image:'https://cdn.pixabay.com/photo/2022/02/13/03/05/grass-7010267_1280.jpg'
+                },
                 // {
                 //     type:'聚會',
                 //     title:'密碼解鎖',

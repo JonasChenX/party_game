@@ -32,6 +32,7 @@ export default {
     methods:{
         setPlayerNum(){
             this.$store.commit('gameBasic/CREATE_PALYERNUM', this.playNum)
+            this.$emit('setPlayerNumList',this.playNum)
         },
         next(){
             if(this.playNum !== null){
