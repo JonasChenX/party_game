@@ -66,7 +66,6 @@ export default {
             for(let i =1; i <= val; i++){
                 this.playerNumList.push(i)
             }
-            console.log(this.playerNumList);
         },
         stop(){
             if(!this.isPalying) return

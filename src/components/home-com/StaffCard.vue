@@ -15,6 +15,9 @@
                     </div>
                     <div class="sm:w-2/3 sm:pl-5 sm:py-5 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 g-flex-center flex-col ">
                         <p class="leading-relaxed text-left text-lg indent-9" v-for="(item,index) in webContent" :key="index">{{item}}</p>
+                        <router-link to="/Blog">
+                            <div class="mt-3 p-5 text-2xl border border-gray-900 rounded-md border-2 hover:bg-gray-200 cursor-pointer">我的部落格筆記</div>
+                        </router-link>
                     </div>
                 </div>
             </div>
@@ -31,6 +34,7 @@ export default {
             webContent:[
                 '此網站的特色就是用最快速的方式，決定輸贏，輸的那一方就可以依照當下的環境去決定要幹嘛 ( 當然要做違法的事情請個人自行承擔 )',
                 '單純會做這個網站，只是想在聚會的時候，多增加一點樂趣，尤其是想用小遊戲讓別人快速灌酒，快速看到別人失態的畫面，畢竟人類開發程式的動力就是如此的單純XD',
+                '不介意的話可以觀看我的「邊緣人筆記分享部落格」，隨時都會有不定期的心得分享',
             ]
         }
     }
