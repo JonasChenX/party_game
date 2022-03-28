@@ -10,7 +10,7 @@ import HumanRoulette from '@/components/game-com/HumanRoulette.vue'
 
 import BlogList from '@/components/blog-com/BlogList.vue'
 import Bulletin from '@/components/blog-com/Bulletin.vue'
-import Question from '@/components/blog-com/Question.vue'
+import Question from '@/components/blog-com/ContactMe.vue'
 import Info from '@/components/blog-com/Info.vue'
 // import BlogAdd from '@/components/blog-com/BlogAdd.vue'
 import BlogAdd from '@/components/blog-com/test.vue'
